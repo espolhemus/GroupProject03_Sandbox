@@ -1,0 +1,31 @@
+{
+  "name": "mern-shopping",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.2",
+    "express": "^4.18.2",
+    "graphsql": "^0.0.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^8.1.3",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "vite": "^5.1.3"
+  }
+}
